@@ -1,0 +1,15 @@
+{
+  "name": "hello-world-napi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-addon-api": "^3.0.2",
+    "node-gyp": "^7.1.0"
+  }
+}
