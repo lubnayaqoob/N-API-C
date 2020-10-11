@@ -1,7 +1,7 @@
 # N-API-C
 napi-c-language-example
 
-## possible commands to run on terminal 
+## possible commands to run on integrated terminal 
 
 Note: vscode integrated terminal will run all these commands, otherwise you will get en error on casual terminal
 
