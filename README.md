@@ -18,3 +18,8 @@ Note: vscode integrated terminal will run all these commands, otherwise you will
 *   printf("Hello, World!");
 *   return 0;
 * }
+
+
+## Explanation of helloWorld.c
+
+* a native funtion 
