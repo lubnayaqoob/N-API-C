@@ -9,12 +9,9 @@ int twice(int x)
 
 napi_value helloWorld(napi_env env, napi_callback_info info)
 {
-    napi_value cb = args[0];
     printf("line number 13 helloWorld function called");
-    int number = twice(numberValue);
+    int number = twice(10);
     printf("the number is : %d\n", number);
-    printf("the &number is : %d\n", &number);
-    printf("the numberValue is : %d\n", numberValue);
     napi_status status;
     size_t argc = 1;
     napi_value argv[1];
