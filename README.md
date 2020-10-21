@@ -2,7 +2,7 @@
 =======
 ## possible commands to run on integrated terminal 
 
-Note: vscode integrated terminal will run all these commands, otherwise you will get en error on casual terminal
+Note: ---------vscode integrated terminal will run all these commands------, otherwise you will get en error on casual terminal
 
 * npm install to isntall necessary packages 
 * node-gyp configure
