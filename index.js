@@ -1,3 +1,4 @@
-//The string passed to require() is the name of the target in binding.gyp responsible for creating the .node file.
 const addon = require('./build/Release/module');
-addon.helloWorld();
+const can_id = 2;    
+const res = addon.helloWorld(can_id);
+console.log("addon.helloWorld(can_id)-------", res );
