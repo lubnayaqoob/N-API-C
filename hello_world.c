@@ -3,25 +3,29 @@
 //hello world native function
 int twice(int x)
 {
-    printf("inside the body of napi_llcan function");
-    return 2*x;
+    printf("---inside the body of napi_llcan function ****");
+    return 3 * x;
 }
 
 napi_value helloWorld(napi_env env, napi_callback_info info)
 {
-    printf("line number 13 helloWorld function called");
-    int number = twice(10);
-    printf("the number is : %d\n", number);
+
     napi_status status;
     size_t argc = 1;
     napi_value argv[1];
     status = napi_get_cb_info(env, info, &argc, argv, NULL, NULL); // for call back funtion in index.js
+    
+    int val;
+    status = napi_get_value_int32(env, argv[0], &val);
 
-    status = napi_get_value_int32(env, argv[0], &number);
+
+    printf("----line number 13 function called");
+    int number = twice(val);
+    printf("------the number is : %d\n", number);
+    
     napi_value canID;
     status = napi_create_int32(env, number, &canID);
     return canID;
-
 }
 
 napi_value Init(napi_env env, napi_value exports)
